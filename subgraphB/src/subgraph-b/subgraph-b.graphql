@@ -1,0 +1,9 @@
+type SubgraphB @key(fields: "id") {
+  id: ID!
+  name: String
+}
+
+type SubgraphA @key(fields: "id") {
+  id: ID!
+  subgraphB: SubgraphB
+}

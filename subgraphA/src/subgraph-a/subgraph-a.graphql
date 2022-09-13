@@ -1,0 +1,8 @@
+type SubgraphA @key(fields: "id") {
+  id: ID!
+  name: String
+}
+
+type Query {
+  subgraphA(id: ID!): SubgraphA
+}
